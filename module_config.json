@@ -1,0 +1,135 @@
+{
+  "modules": {
+    "programming_with_ai": {
+      "title": "Programming/Building Projects with AI",
+      "description": "Practical AI-driven development for QA professionals",
+      "topics": [
+        "Automation Tools Development",
+        "Chatbot Integration for QA",
+        "Personal QA Assistants",
+        "Test Data Generation",
+        "API Testing Automation"
+      ],
+      "hands_on": true,
+      "difficulty": "intermediate"
+    },
+    "ai_best_practices": {
+      "title": "Best Practices with AI",
+      "description": "Effective and safe AI usage in QA workflows",
+      "topics": [
+        "Prompt Design for QA",
+        "Workflow Integration",
+        "Smart Decision Making",
+        "AI Model Selection",
+        "Quality Metrics"
+      ],
+      "hands_on": true,
+      "difficulty": "beginner"
+    },
+    "qa_ai_integration": {
+      "title": "QA + AI Integration",
+      "description": "Advanced AI integration in testing processes",
+      "topics": [
+        "Automated Test Case Generation",
+        "AI-Driven Bug Analysis",
+        "LLM Integration in Testing",
+        "Visual Testing with AI",
+        "Performance Testing Automation"
+      ],
+      "hands_on": true,
+      "difficulty": "advanced"
+    },
+    "knowledge_bases": {
+      "title": "Knowledge Bases with AI",
+      "description": "Build intelligent QA assistants and knowledge systems",
+      "topics": [
+        "Vector Databases for QA",
+        "Embeddings and Similarity Search",
+        "RAG Implementation",
+        "Custom QA Chatbots",
+        "Documentation Intelligence"
+      ],
+      "hands_on": true,
+      "difficulty": "advanced"
+    },
+    "ai_compliance": {
+      "title": "AI Compliance & Governance",
+      "description": "Ethical, legal, and practical AI frameworks",
+      "topics": [
+        "AI Ethics in QA",
+        "Regulatory Compliance",
+        "Risk Assessment",
+        "Audit Trails",
+        "Governance Frameworks"
+      ],
+      "hands_on": false,
+      "difficulty": "intermediate"
+    },
+    "essential_concepts": {
+      "title": "Essential AI Concepts",
+      "description": "Key concepts without deep technical details",
+      "topics": [
+        "MCP (Model Context Protocol)",
+        "RAG (Retrieval Augmented Generation)",
+        "Fine-Tuning Basics",
+        "Prompt Engineering",
+        "AI Model Evaluation"
+      ],
+      "hands_on": false,
+      "difficulty": "beginner"
+    }
+  },
+  "presentation_templates": {
+    "introduction": {
+      "slides": [
+        "Welcome to AI-Driven QA",
+        "Your Learning Journey",
+        "Tools and Resources",
+        "Expected Outcomes"
+      ]
+    },
+    "module_overview": {
+      "slides": [
+        "Module Introduction",
+        "Learning Objectives",
+        "Key Topics",
+        "Hands-on Activities",
+        "Assessment Criteria"
+      ]
+    },
+    "hands_on_session": {
+      "slides": [
+        "Setup and Prerequisites",
+        "Step-by-Step Implementation",
+        "Common Challenges",
+        "Best Practices",
+        "Next Steps"
+      ]
+    },
+    "conclusion": {
+      "slides": [
+        "Key Takeaways",
+        "Further Resources",
+        "Community and Support",
+        "Certification Path"
+      ]
+    }
+  },
+  "assessment_criteria": {
+    "beginner": {
+      "understanding": 40,
+      "application": 30,
+      "problem_solving": 30
+    },
+    "intermediate": {
+      "understanding": 30,
+      "application": 40,
+      "problem_solving": 30
+    },
+    "advanced": {
+      "understanding": 20,
+      "application": 40,
+      "problem_solving": 40
+    }
+  }
+}

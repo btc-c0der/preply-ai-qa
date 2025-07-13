@@ -1,0 +1,52 @@
+# Testing Dependencies for AI-QA Studies Portal
+
+# Core Testing Framework
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-html>=3.2.0
+pytest-xdist>=3.3.1
+pytest-mock>=3.11.1
+pytest-asyncio>=0.21.1
+
+# BDD Testing
+behave>=1.2.6
+pytest-bdd>=6.1.1
+
+# Web Testing
+selenium>=4.15.0
+playwright>=1.40.0
+pytest-playwright>=0.4.3
+
+# API Testing
+requests-mock>=1.11.0
+httpx>=0.25.0
+respx>=0.20.2
+
+# Data Testing
+hypothesis>=6.88.0
+faker>=19.12.0
+
+# Performance Testing
+pytest-benchmark>=4.0.0
+locust>=2.17.0
+
+# Mock and Fixtures
+factory-boy>=3.3.0
+freezegun>=1.2.2
+responses>=0.23.3
+
+# Gradio Testing
+gradio-client>=0.7.0
+
+# Code Quality
+black>=23.9.1
+flake8>=6.1.0
+mypy>=1.6.1
+bandit>=1.7.5
+
+# Documentation Testing
+pytest-doctestplus>=1.0.0
+
+# Reporting
+allure-pytest>=2.13.2
+pytest-json-report>=1.5.0
