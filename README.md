@@ -1,3 +1,25 @@
+---
+title: AI-QA Portal - Interactive Learning Platform
+emoji: 🤖
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: 4.44.0
+app_file: app.py
+pinned: false
+license: mit
+short_description: Interactive AI-powered QA learning portal with comprehensive study modules
+tags:
+- artificial-intelligence
+- quality-assurance
+- education
+- learning
+- gradio
+- testing
+- qa
+- automation
+---
+
 # 🚀 AI-Driven QA Professional Studies Portal
 
 > **Tailored learning experiences for AI Quality Assurance professionals**
