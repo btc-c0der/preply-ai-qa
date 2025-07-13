@@ -1,0 +1,443 @@
+{
+  "module_name": "knowledge_bases",
+  "test_metadata": {
+    "description": "Comprehensive test suite for Knowledge Bases with AI module",
+    "created_date": "2024-12-28",
+    "test_coverage": "Module content, vector databases, RAG implementation, and knowledge systems",
+    "difficulty_level": "advanced",
+    "total_tests": 20
+  },
+  "unit_tests": [
+    {
+      "test_id": "knowledge_bases_001",
+      "test_name": "Module Configuration Validation",
+      "test_type": "unit",
+      "description": "Verify module configuration is properly loaded and contains required fields",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "expected_title": "Knowledge Bases with AI",
+        "expected_description": "Build intelligent QA assistants and knowledge systems",
+        "expected_difficulty": "advanced",
+        "expected_hands_on": true,
+        "expected_topics_count": 5
+      },
+      "assertions": [
+        "Module exists in configuration",
+        "Title matches expected value",
+        "Description is not empty",
+        "Difficulty level is 'advanced'",
+        "Hands-on flag is true",
+        "Topics array contains 5 items"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_002",
+      "test_name": "Topic Content Validation",
+      "test_type": "unit",
+      "description": "Verify all required topics are present and properly formatted",
+      "test_data": {
+        "expected_topics": [
+          "Vector Databases for QA",
+          "Embeddings and Similarity Search",
+          "RAG Implementation",
+          "Custom QA Chatbots",
+          "Documentation Intelligence"
+        ]
+      },
+      "assertions": [
+        "All expected topics are present",
+        "Topic names are properly formatted",
+        "No duplicate topics exist",
+        "Topics are relevant to knowledge bases and AI"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_003",
+      "test_name": "Vector Database Content",
+      "test_type": "functional",
+      "description": "Test content generation for vector databases in QA",
+      "test_data": {
+        "topic": "Vector Databases for QA",
+        "expected_content_areas": [
+          "Vector database fundamentals",
+          "QA-specific use cases",
+          "Performance considerations",
+          "Integration with testing workflows"
+        ]
+      },
+      "assertions": [
+        "Content covers vector database basics",
+        "Includes QA-specific applications",
+        "Covers performance aspects",
+        "Includes integration guidance"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_004",
+      "test_name": "Embeddings and Similarity Search",
+      "test_type": "functional",
+      "description": "Test content generation for embeddings and similarity search",
+      "test_data": {
+        "topic": "Embeddings and Similarity Search",
+        "expected_content_areas": [
+          "Embedding models selection",
+          "Similarity metrics",
+          "Search optimization",
+          "QA document retrieval"
+        ]
+      },
+      "assertions": [
+        "Content covers embedding models",
+        "Includes similarity metrics",
+        "Covers search optimization",
+        "Includes document retrieval"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_005",
+      "test_name": "RAG Implementation Content",
+      "test_type": "functional",
+      "description": "Test content generation for RAG implementation",
+      "test_data": {
+        "topic": "RAG Implementation",
+        "expected_content_areas": [
+          "RAG architecture design",
+          "Retrieval strategies",
+          "Generation quality control",
+          "QA-specific RAG patterns"
+        ]
+      },
+      "assertions": [
+        "Content covers RAG architecture",
+        "Includes retrieval strategies",
+        "Covers generation control",
+        "Includes QA-specific patterns"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_006",
+      "test_name": "Custom QA Chatbots Content",
+      "test_type": "functional",
+      "description": "Test content generation for custom QA chatbots",
+      "test_data": {
+        "topic": "Custom QA Chatbots",
+        "expected_content_areas": [
+          "Chatbot architecture",
+          "Intent recognition",
+          "Response generation",
+          "QA workflow integration"
+        ]
+      },
+      "assertions": [
+        "Content covers chatbot architecture",
+        "Includes intent recognition",
+        "Covers response generation",
+        "Includes workflow integration"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_007",
+      "test_name": "Documentation Intelligence Content",
+      "test_type": "functional",
+      "description": "Test content generation for documentation intelligence",
+      "test_data": {
+        "topic": "Documentation Intelligence",
+        "expected_content_areas": [
+          "Document processing",
+          "Knowledge extraction",
+          "Intelligent search",
+          "Auto-documentation updates"
+        ]
+      },
+      "assertions": [
+        "Content covers document processing",
+        "Includes knowledge extraction",
+        "Covers intelligent search",
+        "Includes auto-updates"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_008",
+      "test_name": "Presentation Generation",
+      "test_type": "integration",
+      "description": "Test presentation generation for knowledge bases module",
+      "test_data": {
+        "template_type": "module_overview",
+        "module_id": "knowledge_bases",
+        "expected_slides": [
+          "Module Introduction",
+          "Learning Objectives",
+          "Key Topics",
+          "Hands-on Activities",
+          "Assessment Criteria"
+        ]
+      },
+      "assertions": [
+        "Presentation is generated successfully",
+        "All required slides are present",
+        "Slides contain relevant content",
+        "Formatting is consistent"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_009",
+      "test_name": "Hands-on Session Generation",
+      "test_type": "integration",
+      "description": "Test hands-on session generation for knowledge bases",
+      "test_data": {
+        "template_type": "hands_on_session",
+        "module_id": "knowledge_bases",
+        "focus_topic": "RAG Implementation"
+      },
+      "assertions": [
+        "Hands-on session is generated",
+        "Contains setup instructions",
+        "Includes step-by-step implementation",
+        "Covers common challenges",
+        "Provides best practices"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_010",
+      "test_name": "Assessment Criteria Application",
+      "test_type": "unit",
+      "description": "Verify correct assessment criteria is applied for advanced difficulty",
+      "test_data": {
+        "difficulty": "advanced",
+        "expected_understanding": 20,
+        "expected_application": 40,
+        "expected_problem_solving": 40
+      },
+      "assertions": [
+        "Understanding weight is 20%",
+        "Application weight is 40%",
+        "Problem solving weight is 40%",
+        "Total weights sum to 100%"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "integration_tests": [
+    {
+      "test_id": "knowledge_bases_int_001",
+      "test_name": "End-to-End Knowledge Base Building",
+      "test_type": "integration",
+      "description": "Test complete knowledge base building workflow",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "workflow_steps": [
+          "Vector database setup",
+          "Document ingestion",
+          "Embedding generation",
+          "RAG implementation",
+          "Chatbot integration"
+        ]
+      },
+      "assertions": [
+        "All workflow steps are covered",
+        "Steps are logically sequenced",
+        "Hands-on activities are practical",
+        "Integration points are clear"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_int_002",
+      "test_name": "Multi-Component System",
+      "test_type": "integration",
+      "description": "Test integration of multiple knowledge base components",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "components": ["Vector DB", "Embeddings", "RAG", "Chatbot"],
+        "integration_type": "full_stack"
+      },
+      "assertions": [
+        "All components integrate properly",
+        "Data flows correctly between components",
+        "System performance is acceptable",
+        "Error handling is comprehensive"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_int_003",
+      "test_name": "QA Workflow Integration",
+      "test_type": "integration",
+      "description": "Test integration with existing QA workflows",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "qa_tools": ["Test management", "Bug tracking", "Documentation"],
+        "integration_points": ["API", "Webhooks", "Direct integration"]
+      },
+      "assertions": [
+        "QA tools integration is seamless",
+        "Workflow disruption is minimal",
+        "Data consistency is maintained",
+        "Performance impact is acceptable"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "performance_tests": [
+    {
+      "test_id": "knowledge_bases_perf_001",
+      "test_name": "Vector Search Performance",
+      "test_type": "performance",
+      "description": "Test performance of vector search operations",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "vector_count": 10000,
+        "search_time_limit": "100ms",
+        "concurrent_searches": 50
+      },
+      "assertions": [
+        "Search completes within time limit",
+        "Performance scales with concurrent users",
+        "Memory usage is reasonable",
+        "Accuracy is maintained"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_perf_002",
+      "test_name": "RAG Response Time",
+      "test_type": "performance",
+      "description": "Test RAG system response time performance",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "query_complexity": "high",
+        "response_time_limit": "3 seconds",
+        "context_size": "large"
+      },
+      "assertions": [
+        "Response generated within time limit",
+        "Quality is maintained under load",
+        "Resource usage is optimized",
+        "Scalability is demonstrated"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "error_handling_tests": [
+    {
+      "test_id": "knowledge_bases_err_001",
+      "test_name": "Vector Database Connection Error",
+      "test_type": "error_handling",
+      "description": "Test handling of vector database connection failures",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "error_type": "connection_failure",
+        "retry_attempts": 3
+      },
+      "assertions": [
+        "Error is detected promptly",
+        "Retry mechanism is activated",
+        "User is informed of status",
+        "Fallback options are provided"
+      ],
+      "expected_result": "handled_error"
+    },
+    {
+      "test_id": "knowledge_bases_err_002",
+      "test_name": "Invalid Embedding Model",
+      "test_type": "error_handling",
+      "description": "Test handling of invalid or unavailable embedding models",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "error_type": "model_unavailable",
+        "fallback_model": "default"
+      },
+      "assertions": [
+        "Error is handled gracefully",
+        "Fallback model is used",
+        "User is notified of change",
+        "System continues functioning"
+      ],
+      "expected_result": "handled_error"
+    },
+    {
+      "test_id": "knowledge_bases_err_003",
+      "test_name": "RAG Generation Failure",
+      "test_type": "error_handling",
+      "description": "Test handling of RAG generation failures",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "error_type": "generation_failure",
+        "fallback_strategy": "template_response"
+      },
+      "assertions": [
+        "Generation failure is detected",
+        "Fallback strategy is activated",
+        "User receives helpful response",
+        "System logs error details"
+      ],
+      "expected_result": "handled_error"
+    }
+  ],
+  "edge_case_tests": [
+    {
+      "test_id": "knowledge_bases_edge_001",
+      "test_name": "Large Document Processing",
+      "test_type": "edge_case",
+      "description": "Test handling of very large documents",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "document_size": "100MB",
+        "processing_strategy": "chunked"
+      },
+      "assertions": [
+        "Large document is processed successfully",
+        "Memory usage remains reasonable",
+        "Processing time is acceptable",
+        "Quality is maintained"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_edge_002",
+      "test_name": "Empty Knowledge Base",
+      "test_type": "edge_case",
+      "description": "Test handling of empty knowledge base",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "knowledge_base_size": 0,
+        "query_type": "general"
+      },
+      "assertions": [
+        "Empty state is handled gracefully",
+        "User receives helpful guidance",
+        "System suggests next steps",
+        "No crashes or errors occur"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "knowledge_bases_edge_003",
+      "test_name": "Extremely Complex Query",
+      "test_type": "edge_case",
+      "description": "Test handling of extremely complex queries",
+      "test_data": {
+        "module_id": "knowledge_bases",
+        "query_complexity": "extreme",
+        "query_length": "2000_characters",
+        "context_requirements": "high"
+      },
+      "assertions": [
+        "Complex query is processed",
+        "Relevant results are returned",
+        "Performance remains acceptable",
+        "User experience is maintained"
+      ],
+      "expected_result": "pass"
+    }
+  ]
+}

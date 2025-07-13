@@ -1,0 +1,398 @@
+{
+  "module_name": "qa_ai_integration",
+  "test_metadata": {
+    "description": "Comprehensive test suite for QA + AI Integration module",
+    "created_date": "2024-12-28",
+    "test_coverage": "Module content, presentation generation, hands-on activities, and error handling",
+    "difficulty_level": "advanced",
+    "total_tests": 18
+  },
+  "unit_tests": [
+    {
+      "test_id": "qa_ai_integration_001",
+      "test_name": "Module Configuration Validation",
+      "test_type": "unit",
+      "description": "Verify module configuration is properly loaded and contains required fields",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "expected_title": "QA + AI Integration",
+        "expected_description": "Advanced AI integration in testing processes",
+        "expected_difficulty": "advanced",
+        "expected_hands_on": true,
+        "expected_topics_count": 5
+      },
+      "assertions": [
+        "Module exists in configuration",
+        "Title matches expected value",
+        "Description is not empty",
+        "Difficulty level is 'advanced'",
+        "Hands-on flag is true",
+        "Topics array contains 5 items"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_002",
+      "test_name": "Topic Content Validation",
+      "test_type": "unit",
+      "description": "Verify all required topics are present and properly formatted",
+      "test_data": {
+        "expected_topics": [
+          "Automated Test Case Generation",
+          "AI-Driven Bug Analysis",
+          "LLM Integration in Testing",
+          "Visual Testing with AI",
+          "Performance Testing Automation"
+        ]
+      },
+      "assertions": [
+        "All expected topics are present",
+        "Topic names are properly formatted",
+        "No duplicate topics exist",
+        "Topics are relevant to QA and AI"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_003",
+      "test_name": "Presentation Generation",
+      "test_type": "integration",
+      "description": "Test presentation generation for QA + AI Integration module",
+      "test_data": {
+        "template_type": "module_overview",
+        "module_id": "qa_ai_integration",
+        "expected_slides": [
+          "Module Introduction",
+          "Learning Objectives",
+          "Key Topics",
+          "Hands-on Activities",
+          "Assessment Criteria"
+        ]
+      },
+      "assertions": [
+        "Presentation is generated successfully",
+        "All required slides are present",
+        "Slides contain relevant content",
+        "Formatting is consistent"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_004",
+      "test_name": "Hands-on Session Generation",
+      "test_type": "integration",
+      "description": "Test hands-on session generation for advanced AI integration",
+      "test_data": {
+        "template_type": "hands_on_session",
+        "module_id": "qa_ai_integration",
+        "focus_topic": "Automated Test Case Generation"
+      },
+      "assertions": [
+        "Hands-on session is generated",
+        "Contains setup instructions",
+        "Includes step-by-step implementation",
+        "Covers common challenges",
+        "Provides best practices"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_005",
+      "test_name": "Assessment Criteria Application",
+      "test_type": "unit",
+      "description": "Verify correct assessment criteria is applied for advanced difficulty",
+      "test_data": {
+        "difficulty": "advanced",
+        "expected_understanding": 20,
+        "expected_application": 40,
+        "expected_problem_solving": 40
+      },
+      "assertions": [
+        "Understanding weight is 20%",
+        "Application weight is 40%",
+        "Problem solving weight is 40%",
+        "Total weights sum to 100%"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_006",
+      "test_name": "AI-Driven Bug Analysis Content",
+      "test_type": "functional",
+      "description": "Test content generation for AI-driven bug analysis topic",
+      "test_data": {
+        "topic": "AI-Driven Bug Analysis",
+        "expected_content_areas": [
+          "Machine learning for bug detection",
+          "Pattern recognition in logs",
+          "Automated root cause analysis",
+          "Predictive bug analysis"
+        ]
+      },
+      "assertions": [
+        "Content covers ML bug detection",
+        "Includes pattern recognition techniques",
+        "Covers automated analysis methods",
+        "Includes predictive approaches"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_007",
+      "test_name": "LLM Integration Testing Content",
+      "test_type": "functional",
+      "description": "Test content generation for LLM integration in testing",
+      "test_data": {
+        "topic": "LLM Integration in Testing",
+        "expected_content_areas": [
+          "API testing with LLMs",
+          "Test case generation",
+          "Natural language test specs",
+          "LLM-powered test oracles"
+        ]
+      },
+      "assertions": [
+        "Content covers API testing",
+        "Includes test case generation",
+        "Covers natural language specs",
+        "Includes test oracle concepts"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_008",
+      "test_name": "Visual Testing AI Content",
+      "test_type": "functional",
+      "description": "Test content generation for visual testing with AI",
+      "test_data": {
+        "topic": "Visual Testing with AI",
+        "expected_content_areas": [
+          "Computer vision for UI testing",
+          "Visual regression detection",
+          "Screenshot comparison algorithms",
+          "Layout analysis automation"
+        ]
+      },
+      "assertions": [
+        "Content covers computer vision",
+        "Includes regression detection",
+        "Covers comparison algorithms",
+        "Includes layout analysis"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_009",
+      "test_name": "Performance Testing Automation",
+      "test_type": "functional",
+      "description": "Test content generation for performance testing automation",
+      "test_data": {
+        "topic": "Performance Testing Automation",
+        "expected_content_areas": [
+          "AI-driven load testing",
+          "Performance anomaly detection",
+          "Predictive performance analysis",
+          "Auto-scaling test scenarios"
+        ]
+      },
+      "assertions": [
+        "Content covers AI load testing",
+        "Includes anomaly detection",
+        "Covers predictive analysis",
+        "Includes auto-scaling concepts"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_010",
+      "test_name": "Module Prerequisites Check",
+      "test_type": "validation",
+      "description": "Verify module prerequisites are properly defined",
+      "test_data": {
+        "expected_prerequisites": [
+          "Basic QA knowledge",
+          "Python programming",
+          "API testing experience",
+          "Machine learning fundamentals"
+        ]
+      },
+      "assertions": [
+        "Prerequisites are clearly defined",
+        "Prerequisites are achievable",
+        "Prerequisites are relevant",
+        "Prerequisites support difficulty level"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "integration_tests": [
+    {
+      "test_id": "qa_ai_integration_int_001",
+      "test_name": "End-to-End Module Flow",
+      "test_type": "integration",
+      "description": "Test complete module flow from selection to completion",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "user_level": "advanced",
+        "selected_topics": ["Automated Test Case Generation", "AI-Driven Bug Analysis"]
+      },
+      "assertions": [
+        "Module loads successfully",
+        "Presentation is generated",
+        "Hands-on activities are available",
+        "Assessment is properly configured",
+        "Progress is tracked correctly"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_int_002",
+      "test_name": "Multi-Topic Session",
+      "test_type": "integration",
+      "description": "Test presentation generation covering multiple topics",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "topics": ["LLM Integration in Testing", "Visual Testing with AI"],
+        "session_duration": "extended"
+      },
+      "assertions": [
+        "Multiple topics are integrated",
+        "Content flows logically",
+        "Hands-on activities are cohesive",
+        "Session timing is appropriate"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_int_003",
+      "test_name": "Advanced Assessment Integration",
+      "test_type": "integration",
+      "description": "Test advanced assessment criteria integration",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "assessment_type": "advanced",
+        "focus_areas": ["application", "problem_solving"]
+      },
+      "assertions": [
+        "Assessment criteria applied correctly",
+        "Problem-solving emphasis is prominent",
+        "Application scenarios are challenging",
+        "Evaluation metrics are appropriate"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "error_handling_tests": [
+    {
+      "test_id": "qa_ai_integration_err_001",
+      "test_name": "Invalid Topic Selection",
+      "test_type": "error_handling",
+      "description": "Test handling of invalid topic selection",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "invalid_topic": "Non-existent Topic"
+      },
+      "assertions": [
+        "Error is handled gracefully",
+        "User receives informative message",
+        "System remains stable",
+        "Alternative topics are suggested"
+      ],
+      "expected_result": "handled_error"
+    },
+    {
+      "test_id": "qa_ai_integration_err_002",
+      "test_name": "Missing Prerequisites",
+      "test_type": "error_handling",
+      "description": "Test handling when user lacks prerequisites",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "user_level": "beginner",
+        "missing_prerequisites": ["Python programming", "API testing"]
+      },
+      "assertions": [
+        "Prerequisites check is performed",
+        "Warning message is displayed",
+        "Alternative learning path suggested",
+        "User can still proceed with acknowledgment"
+      ],
+      "expected_result": "handled_warning"
+    }
+  ],
+  "performance_tests": [
+    {
+      "test_id": "qa_ai_integration_perf_001",
+      "test_name": "Module Load Performance",
+      "test_type": "performance",
+      "description": "Test module loading performance for advanced content",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "max_load_time": "2 seconds",
+        "concurrent_users": 10
+      },
+      "assertions": [
+        "Module loads within time limit",
+        "Performance is consistent",
+        "Memory usage is reasonable",
+        "Concurrent access is handled"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_perf_002",
+      "test_name": "Presentation Generation Performance",
+      "test_type": "performance",
+      "description": "Test performance of presentation generation for complex content",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "template_type": "hands_on_session",
+        "max_generation_time": "5 seconds"
+      },
+      "assertions": [
+        "Presentation generates within time limit",
+        "Complex content is handled efficiently",
+        "Resource usage is optimized",
+        "Quality is maintained"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "edge_case_tests": [
+    {
+      "test_id": "qa_ai_integration_edge_001",
+      "test_name": "All Topics Selected",
+      "test_type": "edge_case",
+      "description": "Test handling when all topics are selected for presentation",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "selected_topics": "all",
+        "time_constraint": "standard"
+      },
+      "assertions": [
+        "All topics are included",
+        "Content is appropriately condensed",
+        "Key points are preserved",
+        "Session remains manageable"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "qa_ai_integration_edge_002",
+      "test_name": "Minimal Configuration",
+      "test_type": "edge_case",
+      "description": "Test module with minimal configuration options",
+      "test_data": {
+        "module_id": "qa_ai_integration",
+        "selected_topics": ["Automated Test Case Generation"],
+        "presentation_type": "brief"
+      },
+      "assertions": [
+        "Minimal configuration is accepted",
+        "Essential content is included",
+        "Presentation is coherent",
+        "User experience is maintained"
+      ],
+      "expected_result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "module_name": "ai_compliance",
+  "test_metadata": {
+    "description": "Comprehensive test suite for AI Compliance & Governance module",
+    "created_date": "2024-12-28",
+    "test_coverage": "Module content, compliance frameworks, ethics, and governance policies",
+    "difficulty_level": "intermediate",
+    "total_tests": 16
+  },
+  "unit_tests": [
+    {
+      "test_id": "ai_compliance_001",
+      "test_name": "Module Configuration Validation",
+      "test_type": "unit",
+      "description": "Verify module configuration is properly loaded and contains required fields",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "expected_title": "AI Compliance & Governance",
+        "expected_description": "Ethical, legal, and practical AI frameworks",
+        "expected_difficulty": "intermediate",
+        "expected_hands_on": false,
+        "expected_topics_count": 5
+      },
+      "assertions": [
+        "Module exists in configuration",
+        "Title matches expected value",
+        "Description is not empty",
+        "Difficulty level is 'intermediate'",
+        "Hands-on flag is false",
+        "Topics array contains 5 items"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_002",
+      "test_name": "Topic Content Validation",
+      "test_type": "unit",
+      "description": "Verify all required topics are present and properly formatted",
+      "test_data": {
+        "expected_topics": [
+          "AI Ethics in QA",
+          "Regulatory Compliance",
+          "Risk Assessment",
+          "Audit Trails",
+          "Governance Frameworks"
+        ]
+      },
+      "assertions": [
+        "All expected topics are present",
+        "Topic names are properly formatted",
+        "No duplicate topics exist",
+        "Topics are relevant to compliance and governance"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_003",
+      "test_name": "AI Ethics Content",
+      "test_type": "functional",
+      "description": "Test content generation for AI ethics in QA",
+      "test_data": {
+        "topic": "AI Ethics in QA",
+        "expected_content_areas": [
+          "Ethical AI principles",
+          "Bias detection and mitigation",
+          "Fairness in automated testing",
+          "Transparency requirements"
+        ]
+      },
+      "assertions": [
+        "Content covers ethical principles",
+        "Includes bias considerations",
+        "Covers fairness in testing",
+        "Includes transparency aspects"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_004",
+      "test_name": "Regulatory Compliance Content",
+      "test_type": "functional",
+      "description": "Test content generation for regulatory compliance",
+      "test_data": {
+        "topic": "Regulatory Compliance",
+        "expected_content_areas": [
+          "GDPR requirements",
+          "Industry-specific regulations",
+          "Data protection laws",
+          "Cross-border compliance"
+        ]
+      },
+      "assertions": [
+        "Content covers GDPR",
+        "Includes industry regulations",
+        "Covers data protection",
+        "Includes cross-border issues"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_005",
+      "test_name": "Risk Assessment Content",
+      "test_type": "functional",
+      "description": "Test content generation for AI risk assessment",
+      "test_data": {
+        "topic": "Risk Assessment",
+        "expected_content_areas": [
+          "Risk identification methods",
+          "Impact analysis",
+          "Mitigation strategies",
+          "Continuous monitoring"
+        ]
+      },
+      "assertions": [
+        "Content covers risk identification",
+        "Includes impact analysis",
+        "Covers mitigation strategies",
+        "Includes monitoring approaches"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_006",
+      "test_name": "Audit Trails Content",
+      "test_type": "functional",
+      "description": "Test content generation for audit trails",
+      "test_data": {
+        "topic": "Audit Trails",
+        "expected_content_areas": [
+          "Audit trail requirements",
+          "Logging best practices",
+          "Traceability standards",
+          "Compliance documentation"
+        ]
+      },
+      "assertions": [
+        "Content covers audit requirements",
+        "Includes logging practices",
+        "Covers traceability",
+        "Includes documentation standards"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_007",
+      "test_name": "Governance Frameworks Content",
+      "test_type": "functional",
+      "description": "Test content generation for governance frameworks",
+      "test_data": {
+        "topic": "Governance Frameworks",
+        "expected_content_areas": [
+          "Framework selection",
+          "Implementation strategies",
+          "Stakeholder engagement",
+          "Performance metrics"
+        ]
+      },
+      "assertions": [
+        "Content covers framework selection",
+        "Includes implementation guidance",
+        "Covers stakeholder aspects",
+        "Includes performance metrics"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_008",
+      "test_name": "Presentation Generation",
+      "test_type": "integration",
+      "description": "Test presentation generation for compliance module",
+      "test_data": {
+        "template_type": "module_overview",
+        "module_id": "ai_compliance",
+        "expected_slides": [
+          "Module Introduction",
+          "Learning Objectives",
+          "Key Topics",
+          "Hands-on Activities",
+          "Assessment Criteria"
+        ]
+      },
+      "assertions": [
+        "Presentation is generated successfully",
+        "All required slides are present",
+        "Slides contain relevant content",
+        "Formatting is consistent"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_009",
+      "test_name": "Assessment Criteria Application",
+      "test_type": "unit",
+      "description": "Verify correct assessment criteria is applied for intermediate difficulty",
+      "test_data": {
+        "difficulty": "intermediate",
+        "expected_understanding": 30,
+        "expected_application": 40,
+        "expected_problem_solving": 30
+      },
+      "assertions": [
+        "Understanding weight is 30%",
+        "Application weight is 40%",
+        "Problem solving weight is 30%",
+        "Total weights sum to 100%"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_010",
+      "test_name": "Theoretical Focus Validation",
+      "test_type": "validation",
+      "description": "Verify module maintains theoretical focus without hands-on requirements",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "hands_on_flag": false,
+        "content_type": "theoretical"
+      },
+      "assertions": [
+        "Hands-on flag is correctly set to false",
+        "Content emphasizes theory and frameworks",
+        "Practical examples are conceptual only",
+        "Assessment focuses on understanding"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "integration_tests": [
+    {
+      "test_id": "ai_compliance_int_001",
+      "test_name": "Compliance Framework Integration",
+      "test_type": "integration",
+      "description": "Test integration of multiple compliance frameworks",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "frameworks": ["GDPR", "ISO 27001", "SOX", "HIPAA"],
+        "integration_type": "comprehensive"
+      },
+      "assertions": [
+        "Multiple frameworks are integrated",
+        "Overlaps are identified and addressed",
+        "Conflicts are resolved",
+        "Unified approach is presented"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_int_002",
+      "test_name": "Ethics and Legal Integration",
+      "test_type": "integration",
+      "description": "Test integration of ethical and legal considerations",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "components": ["Ethics", "Legal", "Practical"],
+        "balance": "equal_emphasis"
+      },
+      "assertions": [
+        "Ethics and legal aspects are balanced",
+        "Practical implications are clear",
+        "Content flows logically",
+        "No contradictions exist"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "validation_tests": [
+    {
+      "test_id": "ai_compliance_val_001",
+      "test_name": "Compliance Standards Accuracy",
+      "test_type": "validation",
+      "description": "Validate accuracy of compliance standards and regulations",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "standards": ["GDPR", "CCPA", "ISO 27001"],
+        "validation_source": "official_documentation"
+      },
+      "assertions": [
+        "Standards are accurately represented",
+        "Information is up-to-date",
+        "References are credible",
+        "Interpretations are correct"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_val_002",
+      "test_name": "Legal Framework Consistency",
+      "test_type": "validation",
+      "description": "Validate consistency across different legal frameworks",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "jurisdictions": ["EU", "US", "UK", "Canada"],
+        "consistency_check": "cross_reference"
+      },
+      "assertions": [
+        "Framework differences are noted",
+        "Similarities are highlighted",
+        "Conflicts are identified",
+        "Guidance is jurisdiction-specific"
+      ],
+      "expected_result": "pass"
+    }
+  ],
+  "error_handling_tests": [
+    {
+      "test_id": "ai_compliance_err_001",
+      "test_name": "Outdated Regulation Information",
+      "test_type": "error_handling",
+      "description": "Test handling of potentially outdated regulation information",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "error_type": "outdated_info",
+        "detection_method": "timestamp_check"
+      },
+      "assertions": [
+        "Outdated information is flagged",
+        "Warning is displayed to user",
+        "Update mechanism is triggered",
+        "Alternative sources are suggested"
+      ],
+      "expected_result": "handled_warning"
+    },
+    {
+      "test_id": "ai_compliance_err_002",
+      "test_name": "Conflicting Framework Requirements",
+      "test_type": "error_handling",
+      "description": "Test handling of conflicting framework requirements",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "error_type": "framework_conflict",
+        "resolution_strategy": "prioritization"
+      },
+      "assertions": [
+        "Conflicts are identified",
+        "Prioritization logic is applied",
+        "User is informed of conflicts",
+        "Resolution strategy is explained"
+      ],
+      "expected_result": "handled_conflict"
+    }
+  ],
+  "edge_case_tests": [
+    {
+      "test_id": "ai_compliance_edge_001",
+      "test_name": "Multi-Jurisdiction Compliance",
+      "test_type": "edge_case",
+      "description": "Test handling of multi-jurisdiction compliance requirements",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "jurisdictions": ["EU", "US", "APAC"],
+        "complexity": "high"
+      },
+      "assertions": [
+        "Multiple jurisdictions are handled",
+        "Complexity is managed effectively",
+        "Clear guidance is provided",
+        "Conflicts are resolved"
+      ],
+      "expected_result": "pass"
+    },
+    {
+      "test_id": "ai_compliance_edge_002",
+      "test_name": "Emerging Regulation Scenarios",
+      "test_type": "edge_case",
+      "description": "Test handling of emerging or proposed regulations",
+      "test_data": {
+        "module_id": "ai_compliance",
+        "regulation_status": "proposed",
+        "uncertainty_level": "high"
+      },
+      "assertions": [
+        "Emerging regulations are identified",
+        "Uncertainty is communicated",
+        "Preparatory guidance is provided",
+        "Monitoring recommendations included"
+      ],
+      "expected_result": "pass"
+    }
+  ]
+}
